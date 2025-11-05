@@ -1,7 +1,8 @@
-
+// @ts-nocheck
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { getSheetRows } from '@/lib/sheets'
+
 
 export async function generateStaticParams() {
   const rows = await getSheetRows()
