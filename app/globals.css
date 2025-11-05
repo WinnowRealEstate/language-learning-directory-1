@@ -1,0 +1,62 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #0b1220;
+}
+
+html, body { height: 100%; }
+body {
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply bg-white rounded-xl shadow-card border border-gray-100; }
+.badge { @apply inline-flex items-center rounded-full border border-gray-200 px-2.5 py-1 text-xs font-medium; }
+.btn { @apply inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-lg bg-brand-600 text-white px-4 py-2 text-sm font-medium hover:bg-brand-700; }
+
+/* Rich HTML content coming from Google Sheets */
+.rich-content h1 {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.rich-content h2 {
+  @apply text-2xl font-semibold mt-6 mb-2;
+}
+
+.rich-content h3 {
+  @apply text-xl font-semibold mt-4 mb-2;
+}
+
+.rich-content p {
+  @apply mt-2;
+}
+
+.rich-content a {
+  @apply text-brand-600 underline;
+}
+
+.rich-content a:hover {
+  @apply text-brand-700;
+}
+
+/* Your custom resource blocks */
+.rich-content .resource {
+  @apply mt-6 border border-gray-100 rounded-xl p-4 bg-white shadow-sm;
+}
+
+.rich-content .resource h2 {
+  @apply mb-1;
+}
+
+.rich-content .resource .level,
+.rich-content .resource .type {
+  @apply text-sm font-medium text-gray-600;
+}
