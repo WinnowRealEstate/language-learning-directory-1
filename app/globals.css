@@ -60,3 +60,13 @@ body {
 .rich-content .resource .type {
   @apply text-sm font-medium text-gray-600;
 }
+
+.rich-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 260px;          /* you can tweak this number */
+  margin: 1.5rem auto;        /* space above/below + centered */
+  border-radius: 0.75rem;     /* rounded corners */
+  object-fit: contain;        /* show full image, no cropping */
+}
