@@ -29,6 +29,7 @@ export default async function RootLayout({
 }) {
   const home = await getHomeConfig()
   const year = new Date().getFullYear()
+  
   const gaId = process.env.NEXT_PUBLIC_GA_ID
 
   return (
