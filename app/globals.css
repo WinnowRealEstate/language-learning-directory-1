@@ -65,6 +65,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+  
   max-height: 260px;          /* you can tweak this number */
   margin: 1.5rem auto;        /* space above/below + centered */
   border-radius: 0.75rem;     /* rounded corners */
